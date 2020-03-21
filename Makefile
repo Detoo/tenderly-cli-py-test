@@ -21,9 +21,7 @@ compile_contracts:
 
 # Make sure the network ID is added manually to your contract artifact json file; otherwise tenderly-cli proxy won't find be able to use it for debug tracing.
 run_local_testnet:
-	node_modules/.bin/ganache-cli \
-		--account="0x91cf2cc3671a365fcbf38010ff97ee31a5b7e674842663c56769e41600696ead,10000000000000000000000" \
-		--networkId=123456789
+	node_modules/.bin/ganache-cli --networkId=123456789
 
 # Prerequisites: You must have tenderly installed globally (https://medium.com/tenderly/how-to-debug-solidity-smart-contracts-with-tenderly-and-truffle-da995cfe098f)
 run_tenderly_proxy:
