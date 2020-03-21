@@ -28,5 +28,5 @@ run_tenderly_proxy:
 	tenderly proxy
 
 # Run and behold the human-readable stack-trace.
-run_py_app:
-	env/bin/python py_utils/run.py
+run_tests:
+	env/bin/py.test py_tests/
